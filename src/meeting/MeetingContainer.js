@@ -30,7 +30,7 @@ export function MeetingContainer({
   micEnabled,
   webcamEnabled,
 }) {
-  const { useRaisedHandParticipants, raisedHandsParticipants } =
+  const { useRaisedHandParticipants } =
     useMeetingAppContext();
   const bottomBarHeight = 60;
 
