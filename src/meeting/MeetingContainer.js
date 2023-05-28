@@ -117,7 +117,7 @@ export function MeetingContainer({
   }
 
   function onEntryResponded(participantId, name) {
-    // console.log(" onEntryResponded", participantId, name);
+    console.log(" onEntryResponded", participantId, name);
     if (mMeetingRef.current?.localParticipant?.id === participantId) {
       if (name === "allowed") {
         setLocalParticipantAllowedJoin(true);
@@ -132,8 +132,7 @@ export function MeetingContainer({
 
   async function onMeetingJoined() {
     // console.log("onMeetingJoined");
-    const { changeWebcam, changeMic, muteMic, disableWebcam } =
-      mMeetingRef.current;
+    const { changeWebcam, changeMic, muteMic, disableWebcam } = mMeetingRef.current;
 
     if (webcamEnabled && selectedWebcam.id) {
       await new Promise((resolve) => {

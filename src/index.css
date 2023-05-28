@@ -13,6 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  color: #fff !important;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }

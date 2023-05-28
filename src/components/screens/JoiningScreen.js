@@ -462,6 +462,7 @@ export function JoiningScreen({
                       } else alert("Invalid Meeting Id");
                     }}
                     _handleOnCreateMeeting={async () => {
+                      console.log(1);
                       const token = await getToken();
                       const _meetingId = await createMeeting({ token });
                       setToken(token);

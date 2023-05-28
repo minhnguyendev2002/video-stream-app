@@ -38,7 +38,7 @@ function ParticipantGrid({ participantIds, isPresenting }) {
     <div
       className={`flex flex-col md:flex-row flex-grow m-3 items-center justify-center ${
         participantIds.length < 2 && !sideBarMode && !isPresenting
-          ? "md:px-16 md:py-2"
+          ? ""
           : participantIds.length < 3 && !sideBarMode && !isPresenting
           ? "md:px-16 md:py-8"
           : participantIds.length < 4 && !sideBarMode && !isPresenting
@@ -50,7 +50,7 @@ function ParticipantGrid({ participantIds, isPresenting }) {
     >
       <div className="flex flex-col w-full h-full">
         {Array.from(
-          { length: Math.ceil(participantIds.length / perRow) },
+          { length: 1 },
           (_, i) => {
             return (
               <div
